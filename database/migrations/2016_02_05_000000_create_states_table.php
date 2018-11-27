@@ -18,7 +18,7 @@ class CreateStatesTable extends Migration
 
             $table->increments('id');
             $table->string('name', 64)->unique();
-            $table->string('abbr', 2)->unique();
+            $table->string('initials', 2)->unique();
             $table->timestamps();
             $table->softDeletes();
 
